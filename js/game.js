@@ -85,9 +85,15 @@ function checkCollision() {
 
 function gameLoop() {
   if (checkCollision()) {
-    alert(`Game Over! Your score: ${score}`);
-    clearInterval(gameInterval);
-    showMenu("mainMenu");
+    Swal.fire({
+      title: "Game Over!",
+      text: `Your score: ${score}`,
+      icon: "error",
+      confirmButtonText: "OK",
+    }).then(() => {
+      clearInterval(gameInterval);
+      showMenu("mainMenu");
+    });
   } else {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     drawSnake();
