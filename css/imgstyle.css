@@ -1,0 +1,8 @@
+#menuImage {
+  max-width: 200px; /* Sesuaikan ukuran gambar */
+  margin-top: 10px; /* Memberi jarak antara judul dan gambar */
+  margin-bottom: 20px; /* Memberi jarak antara gambar dan tombol */
+  display: block; /* Membuat gambar menjadi blok */
+  margin-left: auto; /* Menggeser gambar ke kanan */
+  margin-right: auto;
+}
